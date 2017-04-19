@@ -1,0 +1,46 @@
+<html>    
+    <head>
+<style>
+ @font-face {
+         font-family: volvolife;
+         src: url(VolvoBroadPro.otf);
+ }
+ .blinker {
+       animation: blinker 0.2s linear infinite;
+ }
+
+ .blinker_img {
+       animation: blinker_img 0.7s linear infinite;
+ }
+
+ body {
+     background-color: blue;
+    animation: blinker_bg 2s linear infinite;
+ }
+
+ @keyframes blinker_bg {
+    50% { background-color: yellow; }
+ }
+
+ @keyframes blinker_img {
+        50% { opacity: 0; }
+ }
+
+ @keyframes blinker {  
+     100% { color: blue; }
+     80% { color: yellow; }
+     60% { color: blue; }
+     40% { color: yellow; }
+     20% { color: blue; }
+     0% { color: yellow; } 
+       
+ }
+</style>
+    </head>
+    <body>
+    <h1 class="blinker" style="text-align: center; font-family: volvolife; font-size: 80px;"> Volvo e livet </h1>
+    <div class="blinker_img" style="margin: 0; display: flex; align-items: center; justify-content: center">
+        <img class="blinker_img" src="epa.jpg">
+    </div>
+    </body>
+</html>
